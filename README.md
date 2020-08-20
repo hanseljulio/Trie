@@ -2,10 +2,64 @@
 Binary tree testing
 Created June 7th 2019
 
+-------------------------------------------------------------------------------
+
+## Overview
 This is an exercise for binary trees as well as JUnit testing
 
-- dictionary.txt - Text file used for program
-- EntryNode.java - Data structure for the nodes (add child, check terminal, get child, etc)
-- Tree.java - Data structure for the root (getRoot)
-- Trie.java - Main file, Tree data structure (insert, remove, etc)
-- TrieTests.java - JUnit testing for the program
+-------------------------------------------------------------------------------
+
+### Classes
+1. EntryNode.java
+ * Class contains data structure for the nodes
+ * Constructors:
+   * EntryNode(char letter)
+     * The constructor will create an EntryNode containing a letter and is not a terminal
+   * EntryNode(char letter, boolean isTerminal)
+     * This constructor will create an EntryNode containing a letter and isTerminal
+ * Functions:
+   * getChild(Character data)
+     * This function accepts a character and returns a node from the tree
+   * addChild(char letter, boolean isTerminal)
+     * This function will add a child to the tree
+   * isTerminal()
+     * This function checks if letter is a terminal
+   * setTerminal()
+     * This function will set a letter to be a terminal
+   * equals(Object obj)
+     * This function checks for equality
+   * toString()
+     * This function returns the letter as a string
+   * subtreeToString(String prefix, boolean isTail)
+     * This function prints the result as a tree
+     
+     
+2. Tree.java - 
+ * Class contains data structure for the root
+ * Functions:
+   * getRoot()
+     * This function returns the root of the tree
+   * toString()
+     * This function returns the root as a string
+
+
+3. Trie.java - 
+ * Class contains data structure for the tree and the main driver
+ * Functions:
+   * toString()
+     * This function returns the tree as a string
+   * addWords(List<String> words)
+     * This function adds multiple words into the tree
+   * insert(String word)
+     * This function inserts a word into the tree
+   * remove(String word)
+     * This function removes a word from the tree
+   * contains(String potentialWord)
+     * This function checks if the tree contains a word
+   
+   
+4. TrieTests.java
+  * Class contains various JUnit tests
+
+
+
