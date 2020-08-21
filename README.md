@@ -5,7 +5,7 @@
 -------------------------------------------------------------------------------
 
 ## Overview
-* This is an exercise for binary trees as well as JUnit testing
+* This is an exercise for the implementation of binary trees as well as JUnit testing
 * JUnit is made specifically for the testing of the three classes (EntryNode, Tree, Trie)
 
 -------------------------------------------------------------------------------
