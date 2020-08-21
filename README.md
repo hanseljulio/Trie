@@ -1,11 +1,12 @@
 # Trie
-Binary tree testing
-Created June 7th 2019
+* Binary tree testing
+* Created June 7th 2019
 
 -------------------------------------------------------------------------------
 
 ## Overview
-This is an exercise for binary trees as well as JUnit testing
+* This is an exercise for binary trees as well as JUnit testing
+* JUnit is made specifically for the testing of the three classes (EntryNode, Tree, Trie)
 
 -------------------------------------------------------------------------------
 
@@ -19,7 +20,7 @@ This is an exercise for binary trees as well as JUnit testing
      * This constructor will create an EntryNode containing a letter and isTerminal
  * Functions:
    * getChild(Character data)
-     * This function accepts a character and returns a node from the tree
+     * This function accepts a character and returns a node from the tree with an EntryNode data type
    * addChild(char letter, boolean isTerminal)
      * This function will add a child to the tree
    * isTerminal()
@@ -27,7 +28,7 @@ This is an exercise for binary trees as well as JUnit testing
    * setTerminal()
      * This function will set a letter to be a terminal
    * equals(Object obj)
-     * This function checks for equality
+     * This function checks for equality between two EntryNodes
    * toString()
      * This function returns the letter as a string
    * subtreeToString(String prefix, boolean isTail)
@@ -38,7 +39,7 @@ This is an exercise for binary trees as well as JUnit testing
  * Class contains data structure for the root
  * Functions:
    * getRoot()
-     * This function returns the root of the tree
+     * This function returns the root of the tree as an EntryNode data type 
    * toString()
      * This function returns the root as a string
 
@@ -48,7 +49,7 @@ This is an exercise for binary trees as well as JUnit testing
  * Functions:
    * toString()
      * This function returns the tree as a string
-   * addWords(List<String> words)
+   * addWords(List< String > words)
      * This function adds multiple words into the tree
    * insert(String word)
      * This function inserts a word into the tree
